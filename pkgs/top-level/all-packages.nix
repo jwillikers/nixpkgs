@@ -28135,6 +28135,10 @@ with pkgs;
 
   brutefir = callPackage ../applications/audio/brutefir { };
 
+  inherit (callPackages ../applications/graphics/cbconvert { })
+    cbconvert
+    cbconvert-gui;
+
   cheesecutter = callPackage ../applications/audio/cheesecutter { };
 
   cutecapture = callPackage ../applications/video/cutecapture { };
